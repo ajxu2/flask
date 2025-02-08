@@ -1,0 +1,6 @@
+val true = allInts []
+val true = allInts [SOME 1, SOME 3, SOME 5, SOME 7]
+val false = allInts [SOME 3, NONE, SOME 1]
+val true = allInts [SOME 2]
+val false = allInts [NONE, NONE, SOME 8]
+val false = allInts [SOME 7, SOME 5, SOME 4, SOME 3, NONE]
