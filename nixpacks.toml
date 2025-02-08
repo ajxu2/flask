@@ -1,5 +1,5 @@
 [phase.setup]
-aptPkgs = ['wget']
+nixPkgs = ['wget']
 
 [phases.install]
 dependsOn = ['setup']
