@@ -32,7 +32,7 @@ def run_testcases(filename, tests_file):
     # run the tests
     for line in lines:
         try:
-            result = subprocess.run(['smlnj', filename], input=line, capture_output=True, text=True, timeout=5)
+            result = subprocess.run(['./smlnj', filename], input=line, capture_output=True, text=True, timeout=5)
             test_results.append(not sml_errored(result.stdout))
         except subprocess.TimeoutExpired:
             test_results.append(False)
