@@ -1,0 +1,5 @@
+[phase.name]
+  aptPkgs = ['smlnj']
+
+[start]
+cmd = "gunicorn grader:app"
