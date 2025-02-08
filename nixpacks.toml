@@ -1,5 +1,5 @@
 [phases.install]
-cmds = ['curl -O http://smlnj.cs.uchicago.edu/dist/working/110.99.7.1/config.tgz', 'tar -xzf config.tgz', 'LC_ALL=C config/install.sh -default 64']
+cmds = ['export LC_ALL=C', 'curl -O http://smlnj.cs.uchicago.edu/dist/working/110.99.7.1/config.tgz', 'tar -xzf config.tgz', 'config/install.sh']
 
 [start]
 cmd = "gunicorn grader:app"
